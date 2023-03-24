@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start</title>
+  </head>
+  <body>
+    <p id="demo">HTML İçeriği Değiştirebilirim</p>
+    <p id="demo">HTML İçeriği Değiştirebilirim</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML='Hello JavaScript'"
+    >
+      Onclick
+    </button>
+
+    <p>HTML Özellikleri Değiştirebilir</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('myImage').src='./deneme.jpg'"
+    >
+      deneme
+    </button>
+    <img
+      src="./deneme.jpg"
+      alt=""
+      id="myImage"
+      style="width: 100px; height: 70px"
+    />
+    <button onclick="document.getElementById('myImage').src='./metaworld.jpeg'">
+      metaworld
+    </button>
+
+    <p id="stil">HTML stil özelliklerini değiştiri</p>
+    <button
+      type="button"
+      onclick="document.getElementById('stil').style.fontSize='35px'"
+    >
+      click me
+    </button>
+    <br /><br />
+    <button
+      type="button"
+      onclick="document.getElementById('element').style.display='block'"
+    >
+      Göster
+    </button>
+    <p id="element">HTML Elementi gizleyebilir/gösterebilir.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('element').style.display='none'"
+    >
+      Gizle
+    </button>
+  </body>
+</html>
